@@ -3,6 +3,8 @@ Repository linked to publication: Implicit Neural Distance Representation for Un
 
 Authors: Kristine Aavild Juhl, Xabier Morales, Oscar Camara, Ole de Backer and Rasmus Reinhold Paulsen
 
+[My image](kristineaajuhl.github.com/Implicit-Neural-Distance-Representation-of-Complex-Anatomie/img/reconstruction.jpg)
+
 # Prepare training data
 The preprocessing is a fully pythonic pipeline taking .vtk files as input and outputting arrays of point-coordinates and distances to be used for training. 
 Meshes that are to be aligned using a set of pre-computed anatomical landmarks can be processed running:
