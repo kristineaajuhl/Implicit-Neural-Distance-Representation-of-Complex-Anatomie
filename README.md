@@ -46,6 +46,7 @@ python reconstruct_from_latent_code.py -e <experiment_directory> -c <checkpoint_
 ```
 
 # Investigate latent space:
+
 **Visualize latent space:
 
 The following script loads and visualize the latent vectors of the three datasets using PCA and tSNE as dimensionality reduction
