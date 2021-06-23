@@ -3,7 +3,7 @@ Repository linked to publication: Implicit Neural Distance Representation for Un
 
 Authors: Kristine Aavild Juhl, Xabier Morales, Oscar Camara, Ole de Backer and Rasmus Reinhold Paulsen
 
-[![reconstruction](img/reconstruction.png)](img/reconstruction.png)
+[![reconstruction](img/PCA_combined.png)](img/PCA_combined.png)
 
 # Prepare training data
 The preprocessing is a fully pythonic pipeline taking .vtk files as input and outputting arrays of point-coordinates and distances to be used for training. 
@@ -76,3 +76,5 @@ A mesh is extracted from the UDF by running:
 python mesh_UDF.py
 ```
 The method is dependent on the MRFSurface software which can be downloaded at http://www.imm.dtu.dk/~rapa/software.html
+
+[![reconstruction](img/reconstruction.png)](img/reconstruction.png)
