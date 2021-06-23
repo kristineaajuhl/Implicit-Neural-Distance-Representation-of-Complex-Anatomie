@@ -34,23 +34,42 @@ The training is initiated as follows:
 python train.py -e <experiment_directory> -c <optional: continue_from_epoch_number>
 ```
 
-# Find latent vectors from trained model and reconstruct mesh: 
+# Find latent vectors from trained model and reconstruct unsigned distance field: 
 When a model is trained it can be used to generate latent codes for unknown shapes and to reconstruct the input mesh from code. 
 ```
 python reconstruct.py -e <experiment_directory> -c <checkpoint_number> -d <path_to_data> -s <split_file>
 ```
-It is also possible to reconstruct a mesh with a known latent code (ie. interpolations in the latent space). A .pth file should be saved in '<experiment_directory>/reconstruction_from_latentcode/Codes/<name>.pth'. 
+It is also possible to reconstruct a mesh with a known latent code (ie. interpolations in the latent space). 
+A .pth file should be saved in '<experiment_directory>/reconstruction_from_latentcode/Codes/<latent_name>.pth'. 
 ```
 python reconstruct_from_latent_code.py -e <experiment_directory> -c <checkpoint_number> -d <path_to_data> -s <split_file>
 ```
 
-# Investigate latent space
-**Reconstruct from latent vector:
-
+# Investigate latent space:
 **Visualize latent space:
+
+The following script loads and visualize the latent vectors of the three datasets using PCA and tSNE as dimensionality reduction
+```
+python visualize_latentspace.py
+```
 
 **Cluster latent vectors (unsupervised):
 
+The following scripts loads the latent vectors and performs K-means clustering of the latent vectors. 
+```
+python unsupervised_clustering.py
+```
+
 **Train supervised classification model: 
 
+The following script trains and test a simple neural network learning the gender based on the self-optimized latent vectors
+```
+python supervised_classification.py
+```
 
+# Reconstruct mesh from UDF
+A mesh is extracted from the UDF by running:
+```
+python mesh_UDF.py
+```
+The method is dependent on the MRFSurface software which can be downloaded at http://www.imm.dtu.dk/~rapa/software.html
