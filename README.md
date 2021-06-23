@@ -47,21 +47,21 @@ python reconstruct_from_latent_code.py -e <experiment_directory> -c <checkpoint_
 
 # Investigate latent space:
 
-**Visualize latent space:
+**Visualize latent space:**
 
 The following script loads and visualize the latent vectors of the three datasets using PCA and tSNE as dimensionality reduction
 ```
 python visualize_latentspace.py
 ```
 
-**Cluster latent vectors (unsupervised):
+**Cluster latent vectors (unsupervised):**
 
 The following scripts loads the latent vectors and performs K-means clustering of the latent vectors. 
 ```
 python unsupervised_clustering.py
 ```
 
-**Train supervised classification model: 
+**Train supervised classification model: **
 
 The following script trains and test a simple neural network learning the gender based on the self-optimized latent vectors
 ```
