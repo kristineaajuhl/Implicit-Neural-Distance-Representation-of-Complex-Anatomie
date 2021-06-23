@@ -1,7 +1,7 @@
-# Implicit-Neural-Distance-Representation-of-Complex-Anatomie
+# Implicit Neural Distance Representation for Unsupervised and Supervised Classification of Complex Anatomies
 Repository linked to publication: Implicit Neural Distance Representation for Unsupervised and Supervised Classification of Complex Anatomies (Accepted for MICCAI2021).
 
-Authors: Kristine Aavild Juhl, Xabier Morales, Oscar Camara, Ole de Backer and Rasmus Reinhold Paulsen
+**Authors:** Kristine Aavild Juhl, Xabier Morales, Oscar Camara, Ole de Backer and Rasmus Reinhold Paulsen
 
 [![reconstruction](img/PCA_combined.png)](img/PCA_combined.png)
 
