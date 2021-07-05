@@ -190,16 +190,11 @@ class SDFSamples(torch.utils.data.Dataset):
             self.data_source, ws.sdf_samples_subdir, self.npyfiles[idx]
         )
         fileid = os.path.split(filename)[-1][:-4]
-        class_gt = int(self.pd_file.loc[fileid]["Gender"])
-        #class_gt = np.zeros((2))
-        #class_gt[int(self.pd_file.loc[fileid]["Gender"])] = 1
-        #torch_class = torch.from_numpy(class_gt)
         
         if self.load_ram:
             return (
                 unpack_sdf_samples_from_ram(self.loaded_data[idx], self.subsample),
-                idx,
-                torch_class
+                idx
             )
         else:
-            return unpack_sdf_samples(filename, self.subsample), idx, class_gt
+            return unpack_sdf_samples(filename, self.subsample), idx
