@@ -63,7 +63,7 @@ The following scripts loads the latent vectors and performs K-means clustering o
 python unsupervised_clustering.py
 ```
 
-**Train supervised classification model: **
+**Train supervised classification model:**
 
 The following script trains and test a simple neural network learning the gender based on the self-optimized latent vectors
 ```
